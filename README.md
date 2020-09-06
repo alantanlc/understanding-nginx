@@ -4,7 +4,7 @@ Notes on the design and working principles of [nginx](https://nginx.org).
 
 ## Configuration File's Structure
 
-nginx consists of modules which are controlled by directives specified in the configuration file.
+nginx consists of modules which are controlled by __directives__ specified in the configuration file:
 
 ### Directives
 1. Simple directive
