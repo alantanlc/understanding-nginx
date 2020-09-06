@@ -2,17 +2,17 @@
 
 Notes on the design and working principles of [nginx](https://nginx.org).
 
-<summary>Configuration File's Structure</summary>
+## Configuration File's Structure
 
 nginx consists of modules which are controlled by directives specified in the configuration file.
 
-## Directives
+### Directives
 
 Types of Directives:
 1. Simple directive
 1. Block directive
 
-### Simple Directive
+#### Simple Directive
 Name and parameters separated by spaces and ends with a semicolon (;).
 
 <details>
@@ -25,7 +25,7 @@ Name and parameters separated by spaces and ends with a semicolon (;).
     pid /var/run/nginx.pid;
 </details>
 
-### Block Directive
+#### Block Directive
 Name and parameters separated by spaces and ends with a set of additional instructions surrounded by braces (`{` and `}`).
 
 <details>
@@ -47,7 +47,7 @@ If a block directive can have other directives (both simple and block) inside br
     }
 </details>
 
-### Main Context
+#### Main Context
 
 Directives placed in the configuration file outside of any contexts are considered to be in the __main context__. The `events` and `http` directives reside in the __main context__, `server` directive in `http`, and `location` directive in `server`.
 
