@@ -49,7 +49,8 @@ events {
 Directives placed in the configuration file outside of any contexts are considered to be in the __main__ context. The `events` and `http` directives reside in the main context, `server` directive in `http`, and `location` directive in `server`.
 
 <details>
-<summary>Example:</summary>
+    <summary>Example</summary>
+
     worker_processes 1;                     # main context
 
     http {                                  # main context
