@@ -56,7 +56,7 @@ http {                                          # main context
 
 ### Comments
 
-The rest of a line after the # sign is considered a comment.
+The rest of a line after the `#` sign is considered a comment.
 
 ```
 # this is a comment
