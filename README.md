@@ -2,8 +2,7 @@
 
 Notes on the design and working principles of [nginx](https://nginx.org).
 
-__Contents__:
-1. Configuration File's Structure
+## Contents
 
 <details>
     <summary>Configuration File's Structure</summary>
