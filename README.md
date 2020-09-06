@@ -6,7 +6,7 @@ Notes on the design and working principles of [nginx](https://nginx.org).
 
 nginx consists of modules which are controlled by directives specified in the configuration file.
 
-### Directives
+## Directives
 
 Types of Directives:
 1. Simple directive
