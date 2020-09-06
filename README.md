@@ -4,7 +4,7 @@ Notes on the design and working principles of [nginx](https://nginx.org).
 
 ## Configuration File's Structure
 
-nginx consists of modules which are controlled by __directives__ specified in the configuration file:
+nginx consists of modules which are controlled by __directives__ specified in the configuration file (/etc/nginx/nginx.conf):
 
 ### Directives
 1. Simple directive
@@ -39,7 +39,7 @@ events {
 }
 ```
 
-#### Main Context
+### Main Context
 
 Directives placed in the configuration file outside of any contexts are considered to be in the __main context__. The `events` and `http` directives reside in the __main context__, `server` directive in `http`, and `location` directive in `server`.
 
@@ -52,4 +52,12 @@ http {                                          # main context
         return 444;
     }
 }
+```
+
+### Comments
+
+The rest of a line after the # sign is considered a comment.
+
+```
+# this is a comment
 ```
