@@ -15,24 +15,26 @@ Types of Directives:
 ### Simple Directive
 Name and parameters separated by spaces and ends with a semicolon (;).
 
-Example:
-```
-worker_processes 1;
+<details>
+    <summary>Example</summary>
 
-user nobody nogroup;
-error_log /var/log/nginx/error.log warn;
-pid /var/run/nginx.pid;
- ```
+    worker_processes 1;
+
+    user nobody nogroup;
+    error_log /var/log/nginx/error.log warn;
+    pid /var/run/nginx.pid;
+</details>
 
 ### Block Directive
 Name and parameters separated by spaces and ends with a set of additional instructions surrounded by braces ({ and }).
 
-Example:
-```
-location / {
-    try_files $uri @proxy_to_app;
-}
-```
+<details>
+    <summary>Example</summary>
+
+    location / {
+        try_files $uri @proxy_to_app;
+    }
+</details>
 
 If a block directive can have other directives (both simple and block) inside braces, it is called a __context__. Examples of contexts are `events`, `http`, `server`, and `location`.
 
