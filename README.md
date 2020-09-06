@@ -26,7 +26,7 @@ Name and parameters separated by spaces and ends with a semicolon (;).
 </details>
 
 ### Block Directive
-Name and parameters separated by spaces and ends with a set of additional instructions surrounded by braces ({ and }).
+Name and parameters separated by spaces and ends with a set of additional instructions surrounded by braces (`{` and `}`).
 
 <details>
     <summary>Example</summary>
